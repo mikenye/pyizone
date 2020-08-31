@@ -1,0 +1,2 @@
+pycurl==7.43.0.5
+typing-extensions==3.7.4.3      # only required for python versions older than 3.8
