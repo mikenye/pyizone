@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="mikenye-pyizone", # Replace with your own username
+    name="mikenye-pyizone",
     version="0.1",
     author="Mike Nye",
     description="Query and control of WiFi-enabled iZone 310 and compatible family of climate control devices",
