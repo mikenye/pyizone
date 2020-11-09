@@ -8,6 +8,8 @@ Clone the repository, change into the directory and run `pip install -r requirem
 
 It will require python3, and has been tested with version 3.5 and later.
 
+If you install via `pip`, this is done for you automatically.
+
 ## Using as a command line tool
 
 You can import this module to use it as a command line tool.
