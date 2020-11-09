@@ -14,7 +14,7 @@ If you install via `pip`, this is done for you automatically.
 
 You can import this module to use it as a command line tool.
 
-You could also set an alias, for example:
+I recommend setting an alias in your shell's profile, for example:
 
 ```bash
 alias izone='python3 -m pyizone'
@@ -23,7 +23,7 @@ alias izone='python3 -m pyizone'
 ### View help
 
 ```
-$ python3 -m pyizone
+$ izone
 usage: izone [-h] [--verbose] {discover,get,set} ...
 
 Control a control-bridge equipped iZone airconditioning system
@@ -39,7 +39,7 @@ Available subcommands:
 ### Discover devices
 
 ```
-$ python3 -m pyizone discover
+$ izone discover
 Found 1 iZone Controls-Bridge:
   Device ID: 000000XXX (at: xxx.xxx.xxx.xxx:xxxxx)
 Run 'export IZONE_DEVICE=xxx.xxx.xxx.xxx' to automatically target this controls-bridge for all future izone commands.
@@ -52,29 +52,29 @@ $ export IZONE_DEVICE=xxx.xxx.xxx.xxx
 ### Querying settings
 
 ```
-$ python3 -m pyizone get fan
+$ izone get fan
 xxx.xxx.xxx.xxx: System fan is: low
 ```
 
 ```
-$ python3 -m pyizone get mode
+$ izone get mode
 xxx.xxx.xxx.xxx: System mode is: vent
 ```
 
 ### Setting settings
 
 ```
-$ python3 -m pyizone set power on
+$ izone set power on
 xxx.xxx.xxx.xxx: System power is: on
 ```
 
 ```
-$ python3 -m pyizone set mode vent
+$ izone set mode vent
 xxx.xxx.xxx.xxx: System mode is: vent
 ```
 
 ```
-$ python3 -m pyizone set fan low
+$ izone set fan low
 xxx.xxx.xxx.xxx: System fan is: low
 ```
 
